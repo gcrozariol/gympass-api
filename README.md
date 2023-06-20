@@ -8,7 +8,7 @@
 - [x] The user should be able to get the number of check-ins
 - [x] The user should be able to get the history of check-ins
 - [ ] The should be able to search for close gyms
-- [ ] The user should be able to search for gyms by name
+- [x] The user should be able to search for gyms by name
 - [x] The user should be able to check-in in a gym
 - [ ] It should be able to validate the user's check-in
 - [x] It should be able to register a gym
