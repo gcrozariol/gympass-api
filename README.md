@@ -11,7 +11,7 @@
 - [ ] The user should be able to search for gyms by name
 - [x] The user should be able to check-in in a gym
 - [ ] It should be able to validate the user's check-in
-- [ ] It should be able to register a gym
+- [x] It should be able to register a gym
 
 ## Business Rules
 
