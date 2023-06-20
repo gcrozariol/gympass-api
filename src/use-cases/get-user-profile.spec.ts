@@ -1,6 +1,6 @@
 import { hash } from 'bcryptjs'
 import { describe, it, expect, beforeEach } from 'vitest'
-import { InMemoryUsersRepository } from '@/repositories/in-memory/users-repository'
+import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository'
 import { GetUserProfileUseCase } from './get-user-profile'
 import { ResourceNotFoundError } from './errors/resource-not-found-error'
 
@@ -30,11 +30,10 @@ describe('Get user profile use case', () => {
   })
 
   it('should not be able to get user profile with inexistent id', async () => {
-    expect(
-      async () =>
-        await sut.execute({
-          userId: 'inexistent-user',
-        }),
+    await expect(() =>
+      sut.execute({
+        userId: 'inexistent-user',
+      }),
     ).rejects.toBeInstanceOf(ResourceNotFoundError)
   })
 })
