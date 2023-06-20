@@ -4,9 +4,9 @@
 
 - [x] It should be able to register a user
 - [x] It should be able to authenticate
-- [ ] It should be able to get user's profile when logged in
-- [ ] The user should be able to get the number of check-ins
-- [ ] The user should be able to get the history of check-ins
+- [x] It should be able to get user's profile when logged in
+- [x] The user should be able to get the number of check-ins
+- [x] The user should be able to get the history of check-ins
 - [ ] The should be able to search for close gyms
 - [ ] The user should be able to search for gyms by name
 - [x] The user should be able to check-in in a gym
@@ -26,5 +26,5 @@
 
 - [x] The user's password should be hashed
 - [x] The application's data should be persisted within a PostgreSQL database
-- [ ] All data's lists should be paginated with 20 items per page
+- [x] All data's lists should be paginated with 20 items per page
 - [ ] The user must be identified by a JWT
