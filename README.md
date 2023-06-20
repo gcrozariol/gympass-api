@@ -7,7 +7,7 @@
 - [x] It should be able to get user's profile when logged in
 - [x] The user should be able to get the number of check-ins
 - [x] The user should be able to get the history of check-ins
-- [ ] The should be able to search for close gyms
+- [x] The should be able to search for close gyms (within 10 metres)
 - [x] The user should be able to search for gyms by name
 - [x] The user should be able to check-in in a gym
 - [ ] It should be able to validate the user's check-in
