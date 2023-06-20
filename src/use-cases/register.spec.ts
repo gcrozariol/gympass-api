@@ -39,18 +39,18 @@ describe('Register use case', () => {
 
   it('should not be able to register a user with existing email', async () => {
     const usersRepository = new InMemoryUsersRepository()
-    const registerUserCase = new RegisterUseCase(usersRepository)
+    const registerUseCase = new RegisterUseCase(usersRepository)
 
     const email = 'johndoe@exaxmple.com'
 
-    await registerUserCase.execute({
+    await registerUseCase.execute({
       name: 'John Doe',
       email,
       password: '123456',
     })
 
     expect(async () => {
-      await registerUserCase.execute({
+      await registerUseCase.execute({
         name: 'John Doe',
         email,
         password: '123456',
