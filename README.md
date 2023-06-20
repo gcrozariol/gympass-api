@@ -25,6 +25,6 @@
 ## Non-functional Requirements
 
 - [x] The user's password should be hashed
-- [ ] The application's data should be persisted within a PostgreSQL database
+- [x] The application's data should be persisted within a PostgreSQL database
 - [ ] All data's lists should be paginated with 20 items per page
 - [ ] The user must be identified by a JWT
