@@ -6,7 +6,7 @@ export class InMemoryUsersRepository implements UsersRepository {
   public items: User[] = []
 
   async findById(id: string) {
-    const user = this.items.find((user) => user.id === id)
+    const user = this.items.find((item) => item.id === id)
 
     if (!user) return null
 
@@ -14,7 +14,7 @@ export class InMemoryUsersRepository implements UsersRepository {
   }
 
   async findByEmail(email: string) {
-    const user = this.items.find((user) => user.email === email)
+    const user = this.items.find((item) => item.email === email)
 
     if (!user) return null
 
