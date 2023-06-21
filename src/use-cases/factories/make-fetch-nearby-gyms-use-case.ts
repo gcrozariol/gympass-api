@@ -3,7 +3,7 @@ import { FetchNearbyGymsUseCase } from '../fetch-nearby-gyms'
 
 export function makeFetchNearbyGymsUseCase() {
   const gymsRepository = new PrismaGymsRepository()
-  const fetchNearbyGymsUseCase = new FetchNearbyGymsUseCase(gymsRepository)
+  const useCase = new FetchNearbyGymsUseCase(gymsRepository)
 
-  return fetchNearbyGymsUseCase
+  return useCase
 }
