@@ -13,7 +13,7 @@ describe('Profile e2e', () => {
   })
 
   it('should be able to retrieve the user profile', async () => {
-    const token = await createAndAuthenticateUser(app)
+    const { token } = await createAndAuthenticateUser(app)
 
     const profileResponse = await request(app.server)
       .get('/me')
