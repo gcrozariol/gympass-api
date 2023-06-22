@@ -19,8 +19,8 @@
 - [x] The user can't check-in twice in the same day
 - [x] The user can only check-in if closer than 100 metres from the selected gym
 - [x] The check-in can only be validate within 20 minutes after its creation
-- [ ] The check-in can only be validated by administrators
-- [ ] Gyms can only be registered by administrators
+- [x] The check-in can only be validated by administrators
+- [x] Gyms can only be registered by administrators
 
 ## Non-functional Requirements
 
