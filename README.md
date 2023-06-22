@@ -37,4 +37,4 @@ When running tests once via the `npm run test:e2e` command, the latest changes o
 
 However, when running the `npm run test:e2e:watch` command to watch e2e tests, the pre-test script will NOT run first.
 
-Because of that, remember that if we are watching e2e tests and there's a new change to the prisma config file mentioned above, we must stop watching the tests, run `npm run test:e2e` to link the changes, and then we can start watching these tests again by running `npm run test:e2e:watch`.
+Because of that, remember to run the `npm run test:e2e` command first to sync the latest prisma test environment changes. After that, we can then start watching these tests again by running `npm run test:e2e:watch` with the latest prisma test environment changes.
