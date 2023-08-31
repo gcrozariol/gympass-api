@@ -1,13 +1,13 @@
-import { PrismaClient } from '@prisma/client'
-import 'dotenv/config'
-import { execSync } from 'node:child_process'
+/* eslint-disable @typescript-eslint/no-var-requires */
+require('dotenv/config')
 
-import { randomUUID } from 'node:crypto'
-import { Environment } from 'vitest'
+const { PrismaClient } = require('@prisma/client')
+const { execSync } = require('child_process')
+const { randomUUID } = require('crypto')
 
 const prisma = new PrismaClient()
 
-function generateDatabaseURL(schema: string): string {
+function generateDatabaseURL(schema) {
   if (!process.env.DATABASE_URL) {
     throw new Error('Please, provide a DATABASE_URL environment variable.')
   }
@@ -19,8 +19,9 @@ function generateDatabaseURL(schema: string): string {
   return url.toString()
 }
 
-export default <Environment>{
+module.exports = {
   name: 'prisma',
+  transformMode: 'ssr',
   async setup() {
     const schema = randomUUID()
     const databaseURL = generateDatabaseURL(schema)
